@@ -1,0 +1,10 @@
+@charset "UTF-8"; 
+
+.top {
+  background-image: url(../img/top.png);
+  background-size: cover;
+}
+
+h1, h2, h3, h5 {
+  font-family: ROLAchan, Verdana, Geneva, Tahoma, sans-serif;
+} 
