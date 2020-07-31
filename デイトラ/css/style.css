@@ -1,0 +1,288 @@
+/* ========================================================
+共通クラス
+==========================================================*/
+body {
+  color:#082b48;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  width: 90%;
+  max-width: 980px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #082b48;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.clear::after {
+  content:"";
+  clear: both;
+  display: block;
+}
+
+/* ========================================================
+header
+==========================================================*/
+header {
+  padding: 20px 0;
+}
+
+.header-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+}
+
+.header-nav-item {
+  float: left;
+  margin-right: 50px;
+}
+
+.header-nav-item a {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 36px;
+}
+
+/* ========================================================
+top
+==========================================================*/
+.top {
+  background-image: url(../img/main-vsual-nontitle.png);
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.top-title {
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.top-text {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* ========================================================
+section共通クラス
+==========================================================*/
+.section {
+  padding: 60px 0;
+
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+ 
+/* ========================================================
+about
+==========================================================*/
+.about-left {
+  float: left;
+  width: 48%;
+}
+
+.about-right {
+  float: right;
+  width: 48%;
+}
+
+/* ========================================================
+course
+==========================================================*/
+.course {
+  background-color: #e3fcf4;;
+}
+
+.course-wrapper {
+  display:flex;
+  justify-content: space-between;
+}
+
+.course-item {
+  width: 30%;
+}
+
+/* ========================================================
+contact
+==========================================================*/
+.contact-message {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="email"],input[type="text"] {
+  width:600px;
+  border: 3px solid #d8d8d8;
+  font-size: 18px;
+  margin: auto;
+  display: block;
+  padding: 15px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #082b48;
+  display: inline;
+  padding: 20px 60px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+}
+
+.btn-register {
+  background-color: #ec6d64;
+  display: block;
+  margin: auto;
+}
+
+/* ========================================================
+footer
+==========================================================*/
+footer {
+  background-color: #082b48;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-text {
+  float: right;
+  font-size: 12px;
+}
+
+/* ========================================================
+スマホ用サイト
+==========================================================*/
+@media only screen and (max-width:767px) {
+  .clear::after {
+    content: none;
+  }
+
+  /* ========================================================
+  header
+  ==========================================================*/
+  .header-left {
+    float: none;
+  }
+
+  .header-logo {
+    text-align: center;
+  }
+
+  .header-right {
+    float: none;
+  }
+
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-nav-item {
+    float: none;
+    margin: 0;
+  }
+
+  /* ========================================================
+  top
+  ==========================================================*/
+  .top-title {
+    font-size: 32px;
+  }
+
+  .top-text {
+    font-size: 14px;
+  }
+
+  .top{
+    padding: 120px 0;
+  }
+
+  /*========================================================
+  section共通クラス
+  ==========================================================*/
+  .section-title{
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .section{
+    padding: 80px 0;
+  }
+
+  .section p {
+    font-size: 14px;
+  }
+
+  /* ========================================================
+  about
+  ==========================================================*/
+  .about-left {
+    float: none;
+    width:100%;
+    margin-bottom: 20px;
+  }
+
+  .about-right {
+    float: none;
+    width: 100%;
+  }
+
+  /* ========================================================
+  course
+  ==========================================================*/
+  .course-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .course-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* ========================================================
+  contact
+  ==========================================================*/
+  input[type="email"],input[type="text"] {
+    width: 90%;
+  }
+
+  /* ========================================================
+  footer
+  ==========================================================*/
+  .footer-text {
+    float: none;
+    font-size: 10px;
+    text-align: center;
+  }
+
+}
